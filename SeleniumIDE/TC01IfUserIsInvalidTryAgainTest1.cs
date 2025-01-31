@@ -33,7 +33,7 @@ public class TC01IfUserIsInvalidTryAgainTest
         vars = new Dictionary<string, object>();
     }
 
-    [TearDown]
+    [TearDownAttribute]
     protected void TearDown()
     {
         driver.Quit();
