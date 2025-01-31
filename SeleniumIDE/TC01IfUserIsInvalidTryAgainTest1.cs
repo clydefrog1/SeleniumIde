@@ -27,7 +27,6 @@ public class TC01IfUserIsInvalidTryAgainTest
         options.AddArgument("disable-dev-shm-usage");
         options.AddArgument("disable-gpu");
         options.AddArgument("window-size=1920x1080");
-        options.AddArgument("--profile-directory=Default");
 
 
 
