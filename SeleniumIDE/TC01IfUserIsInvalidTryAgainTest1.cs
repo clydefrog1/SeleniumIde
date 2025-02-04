@@ -22,7 +22,7 @@ public class TC01IfUserIsInvalidTryAgainTest
     public void SetUp()
     {
         ChromeOptions options = new ChromeOptions();
-        options.AddArgument("-headless");
+        options.AddArgument("headless");
         options.AddArgument("no-sandbox");
         options.AddArgument("disable-dev-shm-usage");
         options.AddArgument("disable-gpu");
@@ -38,9 +38,9 @@ public class TC01IfUserIsInvalidTryAgainTest
     [TearDown]
     protected void TearDown()
     {
-        driver.Dispose();
-        driver.Quit();
         
+        driver.Quit();
+        driver.Dispose();
     }
 
     [Test]
